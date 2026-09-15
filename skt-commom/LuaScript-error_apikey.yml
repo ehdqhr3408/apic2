@@ -1,0 +1,12 @@
+kind: LuaScript
+apiVersion: api.ibm.com/v1
+metadata:
+  name: LuaScript-error_apikey
+  namespace: skt_common
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  source: '-- apikey error'

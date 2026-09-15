@@ -1,0 +1,16 @@
+kind: Try
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Try-3rdoauth
+  namespace: skt_common
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  execute:
+    - $ref: skt_common:invoke-oauth:1.0
+  catch:
+    - execute:
+        - $ref: skt_common:Throw-3rdoauth:1.0

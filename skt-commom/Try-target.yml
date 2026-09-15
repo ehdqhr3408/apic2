@@ -1,0 +1,13 @@
+kind: Try
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Try-target
+  namespace: skt_common
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  execute:
+    - $ref: skt_common:Invoke-target:1.0
