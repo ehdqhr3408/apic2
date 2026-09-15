@@ -10,7 +10,7 @@ metadata:
       - nano
 spec:
   cases:
-    - condition: ($statusCode() = 200)
+    - condition: $body('response').active = true
       execute: []
   otherwise:
-    - $ref: skt_common:LuaScript-error-oauth:1.0
+    - $ref: skt-commom:Throw-erroroauth:1.0

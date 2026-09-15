@@ -10,14 +10,12 @@ metadata:
       - nano
 spec:
   main:
-    - $ref: skt_common:Set-method:1.0
     - $ref: skt_common:Set-targetHost:1.0
-    - $ref: skt_common:Set-path:1.0
-    - $ref: skt_common:Set-queryParam:1.0
     - $ref: skt_common:Set-gtid:1.0
     - $ref: skt_common:LuaScript-set-orgreq:1.0
     - $ref: skt_common:Switch-auth:1.0
     - $ref: skt_common:Try-common-invoke:1.0
+    - $ref: skt-commom:Switch-fa6YS:1.0
     - $ref: skt_common:Switch-common:1.0
     - $ref: skt_common:ValidateAPISpecification-HCHw3:1.0
     - $ref: skt_common:Try-target:1.0
