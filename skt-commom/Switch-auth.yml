@@ -1,0 +1,18 @@
+kind: Switch
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Switch-auth
+  namespace: skt_common
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  cases:
+    - condition: ($exists($header("request", "authorization")))
+      execute:
+        - $ref: skt_common:Try-3rdoauth:1.0
+        - $ref: skt_common:Switch-check-introspect:1.0
+  otherwise:
+    - $ref: skt_common:Try-apikey:1.0
