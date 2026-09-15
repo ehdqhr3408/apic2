@@ -10,7 +10,7 @@ metadata:
       - nano
 spec:
   execute:
-    - $ref: skt-commom:LuaScript-hXXA1:1.0
+    - $ref: skt-commom:LuaScript-pre-introspect:1.0
     - $ref: skt-commom:Set-token-type-hint:1.0
     - $ref: skt-commom:Invoke-introspect:1.0
     - $ref: skt-commom:Parse-intresp:1.0

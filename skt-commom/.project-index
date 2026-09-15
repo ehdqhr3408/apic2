@@ -31,16 +31,16 @@
     {
       "id": "1191a4f9-04a4-4df2-a1b2-360af41926c6:0",
       "projectId": "0jsIo54f",
-      "filePath": "skt-commom/LuaScript-hXXA1.yml",
+      "filePath": "skt-commom/LuaScript-pre-introspect.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1789458898963,
+      "lastIndexed": 1789463125656,
       "schemaVersion": 1,
       "kind": "LuaScript",
-      "name": "LuaScript-hXXA1",
+      "name": "LuaScript-pre-introspect",
       "namespace": "skt-commom",
       "version": "1.0",
-      "contentHash": "422e179367bda1ca"
+      "contentHash": "296d7f35841979bb"
     },
     {
       "id": "1e6a5cf5-5da5-403d-be2e-f9163b2f8229:0",
@@ -346,13 +346,13 @@
       "filePath": "skt-commom/Try-3rdoauth.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1789462756211,
+      "lastIndexed": 1789463125907,
       "schemaVersion": 1,
       "kind": "Try",
       "name": "Try-3rdoauth",
       "namespace": "skt_common",
       "version": "1.0",
-      "contentHash": "9c7a7f91522ee85f"
+      "contentHash": "bbe73b300705c861"
     },
     {
       "id": "aec896f3-f75f-4267-9194-5ab41980821a:0",
@@ -564,7 +564,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1789448618500,
-      "lastValidated": 1789462756225
+      "lastValidated": 1789463125919
     },
     {
       "id": "25dc1da5-539c-476e-aae7-5c932e96beba",
@@ -637,6 +637,18 @@
       "isValid": true,
       "createdAt": 1789448623761,
       "lastValidated": 1789448623761
+    },
+    {
+      "id": "671c61ce-f16c-441c-b9c9-e24df3baf8a2",
+      "projectId": "0jsIo54f",
+      "sourceNodeId": "a6a25ed3-ede8-47b9-b8e9-bff7fe8a64c3:0",
+      "targetNodeId": "1191a4f9-04a4-4df2-a1b2-360af41926c6:0",
+      "targetRefType": "same-project",
+      "targetRefString": "skt-commom:LuaScript-pre-introspect:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1789463125911,
+      "lastValidated": 1789463125911
     },
     {
       "id": "677b1f5f-0729-46a8-8cdf-f0ec0a5170eb",
@@ -794,18 +806,6 @@
       "isValid": true,
       "createdAt": 1789448624594,
       "lastValidated": 1789448624594
-    },
-    {
-      "id": "c9f44942-6f23-40da-b3f5-88e06ecd9598",
-      "projectId": "0jsIo54f",
-      "sourceNodeId": "a6a25ed3-ede8-47b9-b8e9-bff7fe8a64c3:0",
-      "targetNodeId": "1191a4f9-04a4-4df2-a1b2-360af41926c6:0",
-      "targetRefType": "same-project",
-      "targetRefString": "skt-commom:LuaScript-hXXA1:1.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1789458848514,
-      "lastValidated": 1789458898976
     },
     {
       "id": "cd3a0b1a-44c0-4d12-9da0-f204fb95d909",
