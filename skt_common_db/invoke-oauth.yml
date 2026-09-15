@@ -1,0 +1,23 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: invoke-oauth
+  namespace: skt_common
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  endpoint:
+    http:
+      target:
+        persistentConnections: false
+        timeout: 30
+        url: http://api/common/oauth2
+        decompressResponse: false
+        followRedirects: false
+        chunkedUpload: false
+      verb: POST
+  output: introspectResponse
+  input: introspectRequest

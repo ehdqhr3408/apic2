@@ -1,0 +1,16 @@
+kind: ValidateAPISpecification
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ValidateAPISpecification-HCHw3
+  namespace: skt_common
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  validate:
+    request:
+      schema:
+        validate: true
+  input: request
