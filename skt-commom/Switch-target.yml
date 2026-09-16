@@ -1,8 +1,8 @@
 kind: Switch
 apiVersion: api.ibm.com/v1
 metadata:
-  name: Switch-common
-  namespace: skt_common
+  name: Switch-target
+  namespace: skt-commom
   version: '1.0'
   tags: []
   labels:
@@ -11,6 +11,7 @@ metadata:
 spec:
   cases:
     - condition: ($statusCode() = 200)
-      execute: []
+      execute:
+        - $ref: skt_common:Return-common:1.0
   otherwise:
-    - $ref: skt_common:Return-common:1.0
+    - $ref: skt-commom:LuaScript-target-resp:1.0

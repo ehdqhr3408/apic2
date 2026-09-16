@@ -20,3 +20,5 @@ spec:
         followRedirects: false
         chunkedUpload: true
       verb: POST
+  input: commonrequest
+  output: commonresponse

@@ -1,7 +1,7 @@
-kind: Switch
+kind: LuaScript
 apiVersion: api.ibm.com/v1
 metadata:
-  name: Switch-fa6YS
+  name: LuaScript-target-resp
   namespace: skt-commom
   version: '1.0'
   tags: []
@@ -9,6 +9,4 @@ metadata:
     gatewayTypes:
       - nano
 spec:
-  cases:
-    - condition: ($formatInteger())
-      execute: []
+  source: '-- backend Response change logic'

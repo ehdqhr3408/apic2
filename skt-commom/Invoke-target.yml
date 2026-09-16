@@ -18,3 +18,5 @@ spec:
         decompressResponse: false
         followRedirects: false
         chunkedUpload: false
+  input: request
+  output: response
