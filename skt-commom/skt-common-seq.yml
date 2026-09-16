@@ -1,0 +1,23 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: skt-common-seq
+  namespace: skt_common
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: skt_common:Set-targetHost:1.0
+    - $ref: skt_common:Set-gtid:1.0
+    - $ref: skt_common:LuaScript-set-orgreq:1.0
+    - $ref: skt_common:Switch-auth:1.0
+    - $ref: skt_common:Try-common-invoke:1.0
+    - $ref: skt-commom:Switch-fa6YS:1.0
+    - $ref: skt_common:Switch-common:1.0
+    - $ref: skt_common:ValidateAPISpecification-HCHw3:1.0
+    - $ref: skt_common:Try-target:1.0
+  monitoring:
+    $ref: skt_common:telemetry-skt-common-seq:1.0

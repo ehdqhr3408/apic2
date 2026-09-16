@@ -1,0 +1,11 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: skt-common-pdt
+  namespace: skt-commom
+  version: '1.0'
+  tags: []
+spec:
+  apis:
+    - $ref: skt_common:skt-common-api:1.0
+  plans: []

@@ -1,0 +1,16 @@
+kind: Switch
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Switch-check-introspect
+  namespace: skt_common
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  cases:
+    - condition: $body('response').active = true
+      execute: []
+  otherwise:
+    - $ref: skt-commom:Throw-erroroauth:1.0

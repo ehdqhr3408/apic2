@@ -1,0 +1,22 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Invoke-common
+  namespace: skt_common
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  endpoint:
+    http:
+      target:
+        persistentConnections: false
+        timeout: 30
+        url: >-
+          http://common.com?method=$(method)&path=$(path)&clientId=$(request.headers.Client_Id)$catgCd=$(catgCd)&Authorization=$(request.headers.Authorization)
+        decompressResponse: true
+        followRedirects: false
+        chunkedUpload: true
+      verb: POST

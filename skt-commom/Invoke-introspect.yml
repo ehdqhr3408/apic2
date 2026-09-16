@@ -1,0 +1,25 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Invoke-introspect
+  namespace: skt-commom
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  endpoint:
+    http:
+      target:
+        persistentConnections: false
+        timeout: 30
+        url: >-
+          https://rgw.apic12.e1.com/enterprise1/skt/dp-oauth-skt/oauth2/introspect
+        decompressResponse: false
+        followRedirects: false
+        chunkedUpload: false
+        tlsClientProfile: tls-client-profile-default:1.0.0
+      verb: POST
+  output: introspectResponse
+  input: introspectRequest

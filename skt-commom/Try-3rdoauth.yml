@@ -1,0 +1,19 @@
+kind: Try
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Try-3rdoauth
+  namespace: skt_common
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  execute:
+    - $ref: skt-commom:LuaScript-pre-introspect:1.0
+    - $ref: skt-commom:Set-token-type-hint:1.0
+    - $ref: skt-commom:Invoke-introspect:1.0
+    - $ref: skt-commom:Parse-intresp:1.0
+  catch:
+    - execute:
+        - $ref: skt_common:Throw-3rdoauth:1.0
